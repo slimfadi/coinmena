@@ -77,9 +77,11 @@ UPDATE_DURATION=60
 docker-compose up -d --build
 docker-compose exec web python manage.py migrate --noinput
 
+http://localhost:8000/api/v1/quotes?token=123456
 
 ## Production
 
 docker-compose -f docker-compose.prod.yml up -d --build
 docker-compose -f docker-compose.prod.yml exec web python manage.py migrate --noinput
 
+http://localhost:1337/api/v1/quotes?token=123456
