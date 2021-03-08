@@ -1,7 +1,7 @@
 # coinmena
 BTC/USD Api
 
-##endpoints:
+## Endpoints:
 GET /api/v1/quotes => get latest BTC price in USD
 POST /api/v1/quotes  => get up to date BTC price in USD
 
@@ -11,7 +11,7 @@ I implemented 2 environments, development and production
 There should be an .env.dev or .env.prod file in the root directory, depending on which environment you'd like to build
 
 
-##example .env.dev:
+## Example .env.dev:
 
 DEBUG=1
 SECRET_KEY=alsfhsafhbclkscadjhfawewerybnmliwury
@@ -28,7 +28,7 @@ ALPHA_VANTAGE_APIKEY=XT4QIULYRC2LYKLI
 UPDATE_DURATION=60
 
 
-##example .env.prod
+## Example .env.prod
 
 DEBUG=1
 SECRET_KEY=change_me
